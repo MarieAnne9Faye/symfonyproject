@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello MainController!{% endblock %}
+
+{% block body %}
+<div class="full-screen-container">
+    <div class="login-container">
+      <h3 class="login-title">Bienvenu</h3>
+      <form>
+        <div class="input-group">
+          <label>Email</label>
+          <input type="email" />
+        </div>
+        <div class="input-group">
+          <label>Password</label>
+          <input type="password" />
+        </div>
+        <button type="submit" class="login-button">Se connecter</button>
+        <br>
+        <button type="submit" class="login-button">S'inscrire</button>
+      </form>
+    </div>
+  </div>
+{% endblock %}
