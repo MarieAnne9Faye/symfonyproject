@@ -18,6 +18,20 @@ class MainController extends AbstractController
     {
         return $this->render('main/accueil.html.twig', [
         ]);
-    }   
+    } 
+    
+    #[Route('/chambres', name: 'app_chambre')]
+    public function chambre(): Response
+    {
+        return $this->render('main/chambre.html.twig', [
+        ]);
+    }
+
+    #[Route('/reservations', name: 'app_reservation')]
+    public function reservation(): Response
+    {
+        return $this->render('main/reservation.html.twig', [
+        ]);
+    }
 }
 
